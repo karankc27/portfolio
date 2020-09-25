@@ -1,13 +1,18 @@
 .header-color {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+.header-colors {
+  background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .landing-grid {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   text-align: center;
   position: relative;
   top: 0;
@@ -20,7 +25,10 @@
   display: flex;
   position: relative;
 }
-
+@media only screen and (max-width: 900px) { .projects-grid { 
+  display: flex;
+  flex-direction: column;
+} }
 /* Resume Page css */
 .resume-right-col {
   background: #27221F;
@@ -73,17 +81,26 @@
 /* contact page css */
 
 .avatar-img {
-  width: 40%;
-  height: 40%;
-  padding-top: 1em;
+  width: 30%;
+  height: 45%;
+  padding-top: 1em; 
 }
+@media only screen and (max-width: 900px) { .avatar-img { 
+  
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 
+} }
 .banner-text {
   background-color: black;
   opacity: .8;
   width: 75%;
+  margin-bottom: 1%;
   margin: auto;
   border-radius: 10px;
+  position: relative;
 }
 
 .banner-text h1 {

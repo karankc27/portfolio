@@ -17,12 +17,12 @@ class App extends Component {
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
+        <Drawer className="header-colors" title={<Link style={{textDecoration: 'none', color: '#16222A'}} to="/">MyPortfolio</Link>}>
             <Navigation>
-              <Link to="/">Home</Link>
-              <Link to="/resume">Resume</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/" onClick={() => this.hideToggle()}>Home</Link>
+              <Link to="/resume" onClick={() => this.hideToggle()}>Resume</Link>
+              <Link to="/projects" onClick={() => this.hideToggle()}>Projects</Link>
+              <Link to="/contact" onClick={() => this.hideToggle()}>Contact</Link>
             </Navigation>
         </Drawer>
         <Content>

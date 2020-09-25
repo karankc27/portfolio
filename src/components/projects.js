@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import course from './course.png';
-import stella from './stella.png';
-import sunmart from './sunmart.png';
 
 class Projects extends Component {
   constructor(props) {
@@ -11,12 +8,11 @@ class Projects extends Component {
   }
 
   toggleCategories() {
-    console.log(course)
     if(this.state.activeTab === 0){
       return(
         <div className="projects-grid">
           {/* Student Portal */}
-          <Card shadow={5} style={{height: '450px', width: '29%',margin: 'auto'}}>
+          <Card shadow={5} style={{height: '450px', width: '100%',margin: '2%'}}>
             <CardTitle className="myProject"></CardTitle>
             <CardText style={{height:'100%', paddingTop: '0%'}}>
               <h3><b>Student Portal</b></h3>
@@ -36,7 +32,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{height: '450px', width: '29%',margin: 'auto'}}>
+          <Card shadow={5} style={{height: '450px', width: '100%',margin: '2%'}}>
             <CardTitle className="myProject sunmart"></CardTitle>
             <CardText style={{height:'100%', paddingTop: '0%'}}>
               <h4><b>SunMart: An Online Supermarket</b></h4>
@@ -54,7 +50,7 @@ area and place the order using RazorPay Payment API.
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{height: '450px', width: '29%',margin: 'auto'}}>
+          <Card shadow={5} style={{height: '450px', width: '100%',margin: '2%'}}>
             <CardTitle className="myProject stella"></CardTitle>
             <CardText style={{height:'100%', paddingTop: '0%'}}>
               <h4><b>Stella-EMT: A Rating Website</b></h4>
