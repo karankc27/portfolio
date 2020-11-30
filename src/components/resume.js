@@ -58,7 +58,15 @@ class Resume extends Component {
               jobName="HealthRx (Bajaj Finserv Health Limited)"
               jobDescription="Backend Developer Intern"
               />
-  
+                
+  <hr style={{borderTop: '0.5px dotted grey'}} />
+              <Experience
+                startYear={"October 2020"}
+                endYear={"Present"}
+                jobName="GeeksforGeeks"
+                jobDescription="Technical Content Writer Intern, responsible for writing new articles and improving any existing articles if needed."
+                />
+                  
   <hr style={{borderTop: '0.5px dotted grey'}} />
               <Experience
                 startYear={"November 2019"}
