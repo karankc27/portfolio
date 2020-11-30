@@ -23,7 +23,7 @@ class Projects extends Component {
 </CardText>
             <CardActions border>
               <Button href="https://github.com/karankc27/React-Student-Portal " colored>GitHub</Button>
-              <Button href="http://student-portal-react.s3-website.ap-south-1.amazonaws.com/" colored>Live Demo</Button>
+              <Button href="https://master.d2pcf3hw3a4yxz.amplifyapp.com/auth" colored>Live Demo</Button>
               <Button colored>CodePen</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
